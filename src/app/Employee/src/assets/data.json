@@ -1,0 +1,15 @@
+[
+{"id1" : 101, "name1" : "Prerak", "sal1" : 50000, "dept1" : "CSE"},
+{"id1" : 102, "name1" : "Shubham", "sal1" : 60000, "dept1" : "CSE"},
+{"id1" : 103, "name1" : "Shivam", "sal1" : 45020, "dept1" : "CSE"},
+{"id1" : 104, "name1" : "Shivani", "sal1" : 40500, "dept1" : "CSE"},
+{"id1" : 105, "name1" : "Ashish", "sal1" : 70100, "dept1" : "CSE"},
+{"id1" : 106, "name1" : "Rajat", "sal1" : 80300, "dept1" : "CSE"},
+{"id1" : 201, "name1" : "Sahil", "sal1" : 30000, "dept1" : "Mech"},
+{"id1" : 202, "name1" : "Deepanshu", "sal1" : 80000, "dept1" : "Mech"},
+{"id1" : 203, "name1" : "Anant", "sal1" : 90000, "dept1" : "Mech"},
+{"id1" : 204, "name1" : "Sudanshu", "sal1" : 10000, "dept1" : "Mech"},
+{"id1" : 205, "name1" : "Pooja", "sal1" : 5000, "dept1" : "Mech"},
+{"id1" : 301, "name1" : "Nishant", "sal1" : 40000, "dept1" : "Civil"},
+{"id1" : 302, "name1" : "Praveen", "sal1" : 60000, "dept1" : "Civil"}
+]

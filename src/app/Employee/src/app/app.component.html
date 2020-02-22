@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body class="bgpic">
+  <h1>Angular 2 Operation</h1>
+
+  <div id="upd">
+    <table class="tablecss3,table" *ngIf='flag2'>
+      <tr>
+        <td class="attributecssu">ID</td>
+        <td><input type="text" class="buttoncssu" disabled id="idu" [(ngModel)]="idu" placeholder={{empidn}} /></td>
+      </tr>
+      <tr>
+        <td class="attributecssu">Name</td>
+        <td><input type="text" class="buttoncssu" id="nameu" [(ngModel)]="nameu" value={{name1}}/></td>
+      </tr>
+      <tr>
+        <td class="attributecssu">Sal</td>
+        <td><input type="text" class="buttoncssu" id="salu" [(ngModel)]="salu" value={{sal1}}/></td>
+      </tr>
+      <tr>
+        <td class="attributecssu">Dept</td>
+        <td><input type="text" class="buttoncssu" id="deptu" [(ngModel)]="deptu" value={{dept1}}/></td>
+      </tr>
+      <tr>
+        <td>
+          <input type="button" class="uoperationcss" id="up" value="update" (click)="add2(idu)"/>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <table *ngIf='add1' class="tablecss1">
+  <tr>
+    <td><label class="attributecss">Id:</label></td>
+    <input class="buttoncss" type="text" [(ngModel)]="id1" id="id" value="id"/>
+  </tr>
+  <tr>
+    <td><label class="attributecss">Name:</label></td>
+    <input type="text" class="buttoncss" [(ngModel)]="name1" id="name" value="name"/>
+  </tr>
+  <tr>
+    <td><label class="attributecss">Salary:</label></td>
+    <input type="text" class="buttoncss" [(ngModel)]="sal1" id="sal" value="sal"/>
+  </tr>
+  <tr>
+    <td><label class="attributecss">Department:</label></td>
+    <input type="text" class="buttoncss" [(ngModel)]="dept1" id="dept" value="dept"/>
+  </tr>
+</table>
+<input type="button" class="addbutton" value="Add Employee" (click)="add()" (click)="a()">
+<div *ngIf="array.length>0">
+    <table class="tablecss2" >
+      <tr>
+        <th><input class="thcss"
+           type="button" value="ID" (click)="sortData('id')"></th>
+        <th><input class="thcss"
+          type="button" value="Name" (click)="sortData('name')"></th>
+        <th><input class="thcss"
+           type="button" value="Salary" (click)="sortData('sal')"></th>
+        <th><input class="thcss" type="button" value="Department" (click)="sortData('dept')"></th>
+          <th colspan="2"><input class="thcsso" type="button" value="Operations"></th>
+      </tr>
+      <tr *ngFor="let emp of array;let a=index">
+        <td class="selectcss">{{emp.id1}}</td>
+        <td class="selectcss">{{emp.name1}}</td>
+        <td class="selectcss" >{{emp.sal1}}</td>
+        <td class="selectcss">{{emp.dept1}}</td>
+        <td><input type="button" class="uoperationcss" (click)="update(emp.id1)" value="update"></td>
+
+        <td><input type="button" class="doperationcss" (click)="delete(emp.id1)" value="delete"></td>
+      </tr>
+    </table>
+</div>
+</body>
+</html>
+
